@@ -1,0 +1,229 @@
+:root {
+    --thistle: #d6bac0ff;
+    --lavender-web: #d1d0deff;
+    --dark-purple: #171121ff;
+    --tekhelet: #473875ff;
+    --licorice: #251010ff;
+    --delft-blue: #39316aff;
+    --slate-blue: #6f58b6ff;
+    --space-cadet: #2a264dff;
+    --licorice-2: #150e15ff;
+    --caput-mortuum: #5c3634ff;
+}
+
+* {
+    color: var(--thistle);
+    user-select: none;
+}
+
+@font-face {
+    font-family: kingdom;
+    src: url('../fonte/Kingdom\ Ink.otf');
+}
+
+@font-face {
+    font-family: perfectly;
+    src: url('../fonte/Perfectly.otf');
+}
+
+@font-face {
+    font-family: simple;
+    src: url('../fonte/Simple\ tfb.ttf');
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--delft-blue);
+}
+
+.central {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3% 5%;
+    background: var(--dark-purple);
+    border-radius: 10px;
+    filter: drop-shadow(1px 1px 20px var(--lavender-web));
+    gap: 20px;
+    width: 500px;
+}
+
+.central img#imgSantos {
+    height: 300px;
+    width: auto;
+    border: 2px solid var(--lavender-web);
+    filter: drop-shadow(1px 1px 15px var(--slate-blue));
+    border-radius: 50%;
+}
+
+.central hr {
+    width: 100%;
+    height: 5px;
+    border: none;
+    background: var(--thistle);
+    border-radius: 10px;
+    filter: drop-shadow(1px 1px 2px var(--thistle));
+}
+
+.central h1,
+.central h2,
+.central p,
+.central span {
+
+    filter: drop-shadow(1px 1px 2px var(--thistle));
+    letter-spacing: 2px;
+    font-family: perfectly;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 80%;
+    text-align: center;
+}
+
+.central h1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.central h2 {
+    font-size: 37px;
+    font-weight: bold;
+    letter-spacing: 5px;
+
+}
+
+img {
+    pointer-events: none;
+    height: 25px;
+    width: auto;
+    filter: invert(0.721) drop-shadow(1px 1px 2px var(--thistle));
+    margin: 0;
+    padding: 0;    
+}
+
+.central .redesocial{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 4%;
+}
+
+.central .redesocial div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 500px;
+    margin-top: 13px;
+}
+
+.central .redesocial div .zap, .central .redesocial div .insta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 250px;
+    margin: 0;
+}
+
+.central .redesocial div .zap span, .central .redesocial div .insta span{
+    width: 120px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+
+/* Tablet resposividade */
+
+@media (max-width:1024px) and (min-width: 720px) {
+    body{
+        background: var(--lavender-web);
+    }
+}
+
+/* mobile resposividade */
+
+@media (max-width:720px) {
+    body{
+        background: var(--licorice-2);
+    }
+    
+    .central {
+        padding: 3% 5%;
+        gap: 15px;
+        width: 270px;
+    }
+    
+    .central img#imgSantos {
+        height: 200px;
+    }
+    
+    .central hr {
+        height: 3px;
+    }
+    
+    .central h1,
+    .central h2,
+    .central p,
+    .central span {
+        font-size: 10px;
+    }
+    
+    .central h1 {
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+    
+    }
+    
+    .central h2 {
+        font-size: 25px;
+        letter-spacing: 0px;
+    
+    }
+    
+    img {
+        height: 15px;
+    }
+    
+    .central .redesocial{
+        margin-bottom: 2%;
+    }
+    
+    .central .redesocial div{
+        width: 270px;
+        margin-top: 10px;
+    }
+    
+    .central .redesocial div .zap, .central .redesocial div .insta{
+        width: 150px;
+    }
+    
+    .central .redesocial div .zap span, .central .redesocial div .insta span{
+        width: 80px;
+        margin-left: 8px;
+        font-size: 8px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 17px;
+    background: var(--delft-blue);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--lavender-web);
+    border-radius: 50px;
+    border: 4px solid var(--delft-blue);
+}
+
+::-webkit-scrollbar-thumb:active {
+    cursor: crosshair;
+}
