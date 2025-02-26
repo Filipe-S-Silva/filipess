@@ -1,0 +1,156 @@
+:root {
+    --thistle: #d6bac0ff;
+    --lavender-web: #d1d0deff;
+    --dark-purple: #171121ff;
+    --tekhelet: #473875ff;
+    --licorice: #251010ff;
+    --delft-blue: #39316aff;
+    --slate-blue: #6f58b6ff;
+    --space-cadet: #2a264dff;
+    --licorice-2: #150e15ff;
+    --caput-mortuum: #5c3634ff;
+}
+
+* {
+    color: var(--thistle);
+    /* user-select: none; */
+}
+
+@font-face {
+    font-family: kingdom;
+    src: url('../fonte/Kingdom\ Ink.otf');
+}
+
+@font-face {
+    font-family: perfectly;
+    src: url('../fonte/Perfectly.otf');
+}
+
+@font-face {
+    font-family: simple;
+    src: url('../fonte/Simple\ tfb.ttf');
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.central {
+    background: var(--dark-purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6% 1%;
+    border-radius: 10px;
+    filter: drop-shadow(1px 1px 20px var(--lavender-web));
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    height: 130px;
+    transition: 0.5s ease;
+}
+
+.central:hover{
+    height: auto;
+    transition: .5s;
+}
+
+.central:hover img#imgSantos {
+    position: relative;
+    transition: .5s;
+}
+
+.central .contanier{
+    opacity: 0;
+    visibility: hidden;
+
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s, visibility 0.5s, .5s;
+}
+
+.central:hover .contanier{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0s 0s;
+}
+
+.central img#imgSantos {
+    width: auto;
+    border: 2px solid var(--lavender-web);
+    filter: drop-shadow(1px 1px 15px var(--slate-blue));
+    border-radius: 50%;
+}
+
+.central hr {
+    width: 100%;
+    border: none;
+    background: var(--thistle);
+    border-radius: 10px;
+    filter: drop-shadow(1px 1px 2px var(--thistle));
+}
+
+.central h1,
+.central h2,
+.central p,
+.central span {
+
+    filter: drop-shadow(1px 1px 2px var(--thistle));
+    letter-spacing: 2px;
+    font-family: perfectly;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 80%;
+    text-align: center;
+}
+
+.central h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.central h2 {
+    font-weight: bold;
+}
+
+img {
+    width: auto;
+    filter: invert(0.721) drop-shadow(1px 1px 2px var(--thistle));
+    margin: 0;
+    padding: 0;
+}
+
+.central .redesocial {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.central .redesocial div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.central .redesocial div .zap,
+.central .redesocial div .insta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+.central .redesocial div .zap span,
+.central .redesocial div .insta span {
+    width: 120px;
+    margin-left: 10px;
+    font-size: 14px;
+}

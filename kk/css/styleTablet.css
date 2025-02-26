@@ -1,0 +1,77 @@
+@media (max-width:1024px) and (min-width: 720px) {
+    body {
+        background: var(--lavender-web);
+    }
+
+    .central {        
+        gap: 20px;
+        width: 500px;
+    }
+
+    .central img#imgSantos {
+        height: 200px;
+        position: absolute;
+        top: 2.5%;
+        transition: .5s;
+    }
+
+    .central hr {
+        height: 5px;
+    }
+
+    .central h1 {
+        font-size: 28px;
+        padding-left: 45px;
+
+    }
+
+    .central h2 {
+        font-size: 37px;
+        letter-spacing: 5px;
+        padding-left: 40px;
+    }
+
+    .central p{
+        padding-left: 53px;
+    }
+
+    img {
+        height: 25px;
+    }
+
+    .central .redesocial {
+        margin-bottom: 4%;
+    }
+
+    .central .redesocial div {
+        width: 500px;
+        margin-top: 13px;
+    }
+
+    .central .redesocial div .zap,
+    .central .redesocial div .insta {
+        width: 250px;
+    }
+
+    .central .redesocial div .zap span,
+    .central .redesocial div .insta span {
+        width: 120px;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 17px;
+        background: var(--lavender-web);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: var(--delft-blue);
+        border-radius: 50px;
+        border: 4px solid var(--lavender-web);
+    }
+    
+    ::-webkit-scrollbar-thumb:active {
+        cursor: crosshair;
+    }
+}
